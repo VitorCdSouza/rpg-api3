@@ -3,13 +3,14 @@ using RpgApi.Data;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<DataContext>(options =>
 {
-   options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoLocal"));
+   options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoSomee"));
 });
 
 builder.Services.AddControllers();
@@ -28,11 +29,10 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddControllers().AddNewtonsoftJson(options =>
-        options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-);
+builder.Services.AddControllers().AddNewtonsoftJson(Options =>
+Options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-// etapa 13
+builder.Services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 var app = builder.Build();
 
