@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Organizados\\Etec\\3 Bimestre\\PAM\\rpg-api3\\RpgApi.csproj": {}
+    "E:\\Organizados\\Etec\\3 Bimestre\\PAM\\rpg-api3\\RpgApi.csproj": {}
   },
   "projects": {
-    "e:\\Organizados\\Etec\\3 Bimestre\\PAM\\rpg-api3\\RpgApi.csproj": {
+    "E:\\Organizados\\Etec\\3 Bimestre\\PAM\\rpg-api3\\RpgApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Organizados\\Etec\\3 Bimestre\\PAM\\rpg-api3\\RpgApi.csproj",
+        "projectUniqueName": "E:\\Organizados\\Etec\\3 Bimestre\\PAM\\rpg-api3\\RpgApi.csproj",
         "projectName": "RpgApi",
-        "projectPath": "e:\\Organizados\\Etec\\3 Bimestre\\PAM\\rpg-api3\\RpgApi.csproj",
+        "projectPath": "E:\\Organizados\\Etec\\3 Bimestre\\PAM\\rpg-api3\\RpgApi.csproj",
         "packagesPath": "C:\\Users\\vitor\\.nuget\\packages\\",
-        "outputPath": "e:\\Organizados\\Etec\\3 Bimestre\\PAM\\rpg-api3\\obj\\",
+        "outputPath": "E:\\Organizados\\Etec\\3 Bimestre\\PAM\\rpg-api3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
